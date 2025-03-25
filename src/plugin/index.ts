@@ -1,6 +1,9 @@
 import { Plugin } from 'vite'
 import fs from 'fs'
-import path from 'path'
+import { dirname, resolve } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default function reactPreviewPlugin(): Plugin {
   return {
@@ -28,7 +31,7 @@ export default function reactPreviewPlugin(): Plugin {
     },
     load(id) {
       if (id === '/@vite-react-preview/runtime.tsx') {
-        const runtimePath = path.resolve(__dirname, '../preview/PreviewRuntime.tsx')
+        const runtimePath = resolve(__dirname, '../preview/PreviewRuntime.tsx')
         return fs.readFileSync(runtimePath, 'utf-8')
       }
     }
