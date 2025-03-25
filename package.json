@@ -1,6 +1,7 @@
 {
   "name": "vite-react-preview",
   "version": "0.1.5",
+  "type": "module",
   "description": "SwiftUI-like preview experience for Vite + React components.",
   "main": "dist/plugin/index.js",
   "types": "dist/plugin/index.d.ts",
