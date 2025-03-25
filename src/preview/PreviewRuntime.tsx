@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const modules = import.meta.glob('/src/**/*.tsx', { eager: true });
+const modules = import.meta.glob('/src/**/*.tsx', { eager: true }) as Record<string, any>;
 
 const previews = Object.entries(modules)
   .filter(([_, mod]) => typeof mod.preview === "function")
