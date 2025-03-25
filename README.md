@@ -1,5 +1,10 @@
 # vite-react-preview
 
+[![npm version](https://badge.fury.io/js/vite-react-preview.svg)](https://badge.fury.io/js/vite-react-preview)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/vite-react-preview)](https://bundlephobia.com/package/vite-react-preview)
+[![license](https://img.shields.io/npm/l/vite-react-preview.svg)](https://github.com/your-username/vite-react-preview/blob/main/LICENSE)
+
+
 > A minimal Vite plugin that brings a SwiftUI-style preview experience to React components.
 
 ## ✨ Features
