@@ -1,0 +1,30 @@
+{
+  "name": "vite-react-preview",
+  "version": "0.1.0",
+  "description": "SwiftUI-like preview experience for Vite + React components.",
+  "main": "plugin/index.ts",
+  "types": "plugin/index.ts",
+  "exports": {
+    ".": {
+      "import": "./plugin/index.ts"
+    }
+  },
+  "files": [
+    "plugin",
+    "preview"
+  ],
+  "keywords": ["vite", "react", "preview", "vite-plugin", "swiftui"],
+  "author": "Shion Koga",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  }
+}
