@@ -26,12 +26,12 @@ export default function reactPreviewPlugin(): Plugin {
     },
     resolveId(id) {
       if (id === '/@vite-react-preview/runtime') {
-        return id + '.tsx'
+        return id + '.js'
       }
     },
     load(id) {
-      if (id === '/@vite-react-preview/runtime.tsx') {
-        const runtimePath = resolve(__dirname, '../preview/PreviewRuntime.tsx')
+      if (id === '/@vite-react-preview/runtime.js') {
+        const runtimePath = resolve(__dirname, '../preview/PreviewRuntime.js')
         return fs.readFileSync(runtimePath, 'utf-8')
       }
     }
